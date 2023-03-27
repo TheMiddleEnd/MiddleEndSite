@@ -1,3 +1,10 @@
+body {
+    position: relative;
+    height: 100vh;
+}
+
+/* Navbar */
+
 nav {
     display: flex;
     width: 100%;
@@ -20,7 +27,6 @@ nav {
 .title-div {
     margin-left: 10%;
     margin-top: 25vh;
-    position: fixed; /* idk if this helped */
 }
 
 .main-title {
@@ -44,4 +50,71 @@ nav {
     text-decoration-style: "solid";
     text-decoration-color: rgba(0,230,42,1);
     text-decoration-thickness: 2px;
+}
+
+/* Panels */
+
+.panel {
+    position: absolute;
+
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    box-shadow: 12px 12px black;
+
+    /* transition:  200ms ease-in-out; */
+}
+
+/* Reverse Shadow on hover?
+.panel:hover {
+    box-shadow: -12px -12px black;
+} */ 
+
+
+.panel-1 {
+    border: 6px solid red;
+    background-image: url("../media/images/panels/panel-1.png");
+
+    height: 25vh;
+    width: 25vw;
+ 
+    top: 8vh;
+    right: 3vw;
+}
+
+.panel-2 {
+    border: 6px solid rgb(255, 255, 0);
+    background-image: url("../media/images/panels/panel-2.png");
+
+    height: 28vh;
+    width: 18vw;
+ 
+    bottom: 8vh;
+    left: 15vw;
+
+    /* border-radius: 1rem; */
+}
+
+.panel-3 {
+    border: 6px solid magenta;
+    background-image: url("../media/images/panels/panel-3.png");
+    background-size: 150%;
+
+    height: 40vh;
+    width: 15vw;
+ 
+    bottom: 10vh;
+    right: 20vw;
+}
+
+.panel-4 {
+    border: 6px solid rgb(124, 231, 255);
+    background-image: url("../media/images/panels/panel-4.png");
+
+    height: 20vh;
+    width: 8vw;
+ 
+    top: 12vh;
+    left: 10vw;
 }
