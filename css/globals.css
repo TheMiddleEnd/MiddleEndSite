@@ -4,14 +4,6 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
-
-body {
-    background-image: url("../media/images/parallax2.png");
-    background-position: 45% 30%;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-}
-
 /* Red Thick Underline - For Titles */
 .underlineThickR {
     text-decoration-line: underline;

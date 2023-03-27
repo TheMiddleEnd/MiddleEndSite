@@ -1,9 +1,24 @@
 body {
     position: relative;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+
+    background-image: url("../media/images/parallax.png");
+    background-position: 45% 30%;
+    background-repeat: no-repeat;
+    background-clip: border-box;
 }
 
+/* Hide Scrollbar */
+
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
 /* Navbar */
 
