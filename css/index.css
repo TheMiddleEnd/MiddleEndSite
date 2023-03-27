@@ -1,0 +1,47 @@
+nav {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+
+    align-items: center;
+}
+
+.nav-logo {
+    height: 80px;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Title Section */
+
+.title-div {
+    margin-left: 10%;
+    margin-top: 25vh;
+    position: fixed; /* idk if this helped */
+}
+
+.main-title {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.retype {
+    font-weight: 600;
+}
+
+.main-subtitle {
+    font-family: 'Inria Serif', serif;
+    transition: 200ms ease-in-out;
+    text-decoration-color: rgba(0,230,42,0);
+}
+
+.main-subtitle:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: rgba(0,230,42,1);
+    text-decoration-thickness: 2px;
+}
