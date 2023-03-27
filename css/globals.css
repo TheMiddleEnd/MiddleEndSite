@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Titillium Web', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Red Thick Underline - For Titles */
@@ -10,6 +11,15 @@
     text-decoration-style: "solid";
     text-decoration-color: rgba(232,54,0,1);
     text-decoration-thickness: 6px;
+
+    /* transition:  200ms ease-in-out; */
+}
+
+.underlineG {
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: rgb(31, 235, 48);
+    text-decoration-thickness: 4px;
 
     /* transition:  200ms ease-in-out; */
 }

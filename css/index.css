@@ -145,3 +145,35 @@ nav {
 
     overflow: hidden;
 }
+
+/* Our Mission Section */
+
+.our-mission {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50vh;
+}
+
+.our-mission-title {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.our-mission-description {
+    font-family: 'Inria Serif', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    text-align: center;
+    margin: 0 20vw;
+}
+
+.exchange-anim {
+    max-width: 60vw;
+    margin-top: 2rem;
+    margin-bottom: 20vh;
+}
