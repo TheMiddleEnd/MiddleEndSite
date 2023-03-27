@@ -26,7 +26,7 @@ nav {
 
 .title-div {
     margin-left: 10%;
-    margin-top: 25vh;
+    margin-top: 30vh;
 }
 
 .main-title {
@@ -42,6 +42,8 @@ nav {
     font-family: 'Inria Serif', serif;
     transition: 200ms ease-in-out;
     text-decoration-color: rgba(0,230,42,0);
+
+    width: fit-content;
 }
 
 .main-subtitle:hover {
@@ -49,7 +51,7 @@ nav {
     text-decoration-line: underline;
     text-decoration-style: "solid";
     text-decoration-color: rgba(0,230,42,1);
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 4px;
 }
 
 /* Panels */
@@ -65,12 +67,6 @@ nav {
 
     /* transition:  200ms ease-in-out; */
 }
-
-/* Reverse Shadow on hover?
-.panel:hover {
-    box-shadow: -12px -12px black;
-} */ 
-
 
 .panel-1 {
     border: 6px solid red;
@@ -104,8 +100,8 @@ nav {
     height: 40vh;
     width: 15vw;
  
-    bottom: 10vh;
-    right: 20vw;
+    bottom: 6vh;
+    right: 15vw;
 }
 
 .panel-4 {
@@ -115,6 +111,6 @@ nav {
     height: 20vh;
     width: 8vw;
  
-    top: 12vh;
+    top: 15vh;
     left: 10vw;
 }

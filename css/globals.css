@@ -3,3 +3,13 @@
 * {
     font-family: 'Titillium Web', sans-serif;
 }
+
+/* Red Thick Underline - For Titles */
+.underlineThickR {
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: rgba(232,54,0,1);
+    text-decoration-thickness: 6px;
+
+    /* transition:  200ms ease-in-out; */
+}
