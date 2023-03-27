@@ -20,25 +20,6 @@ body {
     scrollbar-width: none;
 }
 
-/* Navbar */
-
-nav {
-    display: flex;
-    width: 100%;
-    gap: 3rem;
-
-    align-items: center;
-}
-
-.nav-logo {
-    height: 80px;
-}
-
-.nav-item {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
 /* Title Section */
 
 .title-div {

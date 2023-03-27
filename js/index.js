@@ -24,3 +24,18 @@ const retype3 = new Typed('#retype3', {
 setTimeout(() => {
     $("#retype3").addClass("underlineThickR");
 }, 17350);
+
+let count = 0;
+
+setInterval(() => {
+    $("#missionTitle").fadeTo(200, 0, () => {
+        if(count % 2) {
+            $("#missionTitle").html('A simpler way to for developers to volunteer to make <span class="underlineG">real world impacts.</span>');
+        } else {
+            $("#missionTitle").html('A better way to for clients to get solutions - <span class="underlineG">at no cost.</span>');
+        }
+    
+        $("#missionTitle").fadeTo(750, 1);
+    });
+    count++;
+}, 4000);

@@ -23,3 +23,37 @@
 
     /* transition:  200ms ease-in-out; */
 }
+
+/* Navbar */
+
+nav {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+
+    align-items: center;
+}
+
+.nav-logo {
+    height: 80px;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    text-decoration: none;
+    color: black;
+
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: rgba(31, 235, 48, 0);
+    text-decoration-thickness: 4px;
+
+    transition:  100ms ease-in-out;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    text-decoration-color: rgba(31, 235, 48, 1);
+}
