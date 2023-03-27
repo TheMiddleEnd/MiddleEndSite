@@ -1,7 +1,9 @@
 body {
     position: relative;
     height: 100vh;
+    overflow: hidden;
 }
+
 
 /* Navbar */
 
@@ -113,4 +115,18 @@ nav {
  
     top: 15vh;
     left: 10vw;
+}
+
+/* Parallax Image Background */
+
+.parallax-bg {
+    position: absolute;
+
+    z-index: -1;
+    width: 150vw;
+
+    top: -30vh;
+    right: -25vw;
+
+    overflow: hidden;
 }
