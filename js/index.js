@@ -30,9 +30,9 @@ let count = 0;
 setInterval(() => {
     $("#missionTitle").fadeTo(200, 0, () => {
         if(count % 2) {
-            $("#missionTitle").html('A simpler way to for developers to volunteer to make <span class="underlineG">real world impacts.</span>');
+            $("#missionTitle").html('A simpler way for developers to volunteer and make <span class="underlineG">real world impacts.</span>');
         } else {
-            $("#missionTitle").html('A better way to for clients to get solutions - <span class="underlineG">at no cost.</span>');
+            $("#missionTitle").html('A better way for clients to get solutions - <span class="underlineG">at no cost.</span>');
         }
     
         $("#missionTitle").fadeTo(750, 1);
