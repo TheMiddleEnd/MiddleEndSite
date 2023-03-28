@@ -1,6 +1,8 @@
-// import other things we need from the below, including from https://firebase.google.com/docs/web/setup#available-libraries
-import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
+// imports
+// https://firebase.google.com/docs/web/learn-more#available-libraries
+// or, just import from https://www.gstatic.com/firebasejs/9.18.0/firebase-THINGTHATWENEED.js
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyC6l2N4zKu0yjrfdwLqtoW240xyQwj57Iw",
@@ -17,3 +19,9 @@ const firebaseConfig = {
 // init
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
+
+set(ref(db, '000000000'), {
+  a: "oneone",
+  b: "two",
+  c: "three"
+});
