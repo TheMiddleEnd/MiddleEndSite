@@ -7,6 +7,7 @@ body {
     background-position: 45% 30%;
     background-repeat: no-repeat;
     background-clip: border-box;
+    margin: 0px;
 }
 
 /* Hide Scrollbar */
@@ -127,24 +128,23 @@ body {
     overflow: hidden;
 }
 
-/* Our Mission Section */
+/* Sections */
 
-.our-mission {
+.section {
     display: flex;
     flex-direction: column;
 
     justify-content: center;
     align-items: center;
-
-    margin-top: 50vh;
 }
 
-.our-mission-title {
+.section-title {
     font-weight: 400;
     font-size: 2rem;
+    text-align: center;
 }
 
-.our-mission-description {
+.section-description {
     font-family: 'Inria Serif', serif;
     font-size: 1.2rem;
     font-weight: 400;
@@ -153,8 +153,72 @@ body {
     margin: 0 20vw;
 }
 
+/* Our Mission Section */
+
+.our-mission {
+    margin-top: 50vh;
+}
+
 .exchange-anim {
     max-width: 60vw;
     margin-top: 2rem;
-    margin-bottom: 20vh;
+}
+
+/* Contact Section */
+
+.contact {
+    margin-top: 10vh;
+}
+
+/* Sign Up Section */
+
+.signup {
+    margin-top: 10vh;
+}
+
+.signup-label {
+    margin: 0;
+}
+
+input {
+    width: 50vw;
+    height: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+button {
+    background-color:rgb(56, 56, 56);
+    padding: 10px 60px;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Footer */
+
+.footer {
+    width: 100vw;
+
+    padding: 20px;
+    margin-top: 10vh;
+
+    background-color: rgb(56, 56, 56);
+}
+
+.footer-title {
+    font-size: 4rem;
+    color: white;
+    font-family: 'Inria Serif', serif;
+}
+
+.return-to-top {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }

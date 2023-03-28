@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Middle End</title>
+    <title>The Middle End</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
@@ -16,13 +16,25 @@
     <link rel="icon" type="image/x-icon" href="media/images/favicon.ico">
 
 </head>
-<body>
-    <nav>
+<body id="home">
+
+
+
+
+
+
+    <nav id="nav">
         <img class="nav-logo" src="./media/images/logo.png" alt="Middle End Logo">
         <a class="nav-item" href="#our-mission">Our Mission</a>
-        <p class="nav-item">Contact</p>
-        <p class="nav-item">Sign Up - Coming Soon</p>
+        <a class="nav-item" href="#signup">Sign Up</a>
+        <a class="nav-item" href="#contact">Contact</a>
     </nav>
+
+
+
+
+
+
 
     <div class="title-div">
         <h1 class="main-title">Connecting 
@@ -36,18 +48,30 @@
         </h3>
     </div>
 
+
+
+
+
+
+
     <div class="panel panel-1"></div>
     <div class="panel panel-2"></div>
     <div class="panel panel-3"></div>
     <div class="panel panel-4"></div>
 
-    <div class="our-mission" id="our-mission">
+
+
+
+
+
+
+    <div class="section our-mission" id="our-mission">
         
-        <h2 class="our-mission-title" id="missionTitle">
+        <h2 class="section-title" id="missionTitle">
             A simpler way to for developers to volunteer to make <span class="underlineG">real world impacts.</span>
         </h2>
 
-        <h4 class="our-mission-description">
+        <h4 class="section-description">
             Middle End connects aspiring developers wanting to make an impact with in-need clients to produce solutions at no cost. Whether you are a student looking for a new project, or a business owner needing a quick website - Middle End can be for you.
         </h4>
 
@@ -58,6 +82,63 @@
         </video>
     </div>
 
+
+
+
+
+
+
+
+    <div class="section signup" id="signup">
+
+        <h2 class="section-title">
+            Whether you're a <strong>developer</strong> raring to go or a <strong>client</strong> ready to find a solution, sign up here!
+        </h2>
+
+        <p class="signup-label">Name:</p><input type="text" id="name-input"></input>
+        <p class="signup-label">Phone Number:</p><input type="text" id="phone-input"></input>
+        <p class="signup-label">Email Address:</p><input type="text" id="email-input"></input>
+
+        <button id="signup-button">
+            SUBMIT ➡
+        </button>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="section contact" id="contact">
+
+        <h2 class="section-title">
+            <strong>🤝 Get in touch</strong>
+        </h2>
+
+        <h4 class="section-description">
+            the.middle.end.org@gmail.com
+        </h4>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="section footer">
+
+        <h1 class="footer-title">
+            TheMiddleEnd: Here to help you connect.
+        </h1>
+
+        <a class="return-to-top" href="#home">⬆ return to top...</a>
+
+    </div>
 
     <!-- <img src="./media/images/parallax2.png" alt="" class="parallax-bg"> -->
 </body>
