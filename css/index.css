@@ -10,6 +10,12 @@ body {
     margin: 0px;
 }
 
+@media screen and (max-width: 900px) {
+    body {
+        background-image: none;
+    }
+}
+
 /* Hide Scrollbar */
 
 body::-webkit-scrollbar {
@@ -33,6 +39,19 @@ body {
     font-size: 2.5rem;
 }
 
+@media screen and (max-width: 850px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+
+    .title-div {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 .retype {
     font-weight: 600;
 }
@@ -41,6 +60,8 @@ body {
     font-family: 'Inria Serif', serif;
     transition: 200ms ease-in-out;
     text-decoration-color: rgba(0,230,42,0);
+
+    font-weight: bold;
 
     width: fit-content;
 }
@@ -58,7 +79,7 @@ body {
 .panel {
     position: absolute;
 
-    background-size: 130%;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -71,8 +92,8 @@ body {
     border: 6px solid red;
     background-image: url("../media/images/panels/panel-1.png");
 
-    height: 25vh;
-    width: 25vw;
+    height: 180px;
+    width: 380px;
  
     top: 8vh;
     right: 3vw;
@@ -82,13 +103,11 @@ body {
     border: 6px solid rgb(255, 255, 0);
     background-image: url("../media/images/panels/panel-2.png");
 
-    height: 28vh;
-    width: 18vw;
+    width: 280px;
+    height: 180px;
  
     bottom: 8vh;
     left: 15vw;
-
-    /* border-radius: 1rem; */
 }
 
 .panel-3 {
@@ -96,22 +115,69 @@ body {
     background-image: url("../media/images/panels/panel-3.png");
     background-size: 150%;
 
-    height: 40vh;
-    width: 15vw;
+    width: 230px;
+    height: 250px;
  
-    bottom: 6vh;
+    bottom: 5vh;
     right: 15vw;
 }
+
+/* @media screen and (max-width: 1200px) {
+    .panel-3 {
+
+    }
+} */
 
 .panel-4 {
     border: 6px solid rgb(124, 231, 255);
     background-image: url("../media/images/panels/panel-4.png");
 
-    height: 20vh;
-    width: 8vw;
+    width: 120px;
+    height: 130px;
  
     top: 15vh;
     left: 10vw;
+}
+
+@media screen and (max-width: 850px) {
+    .panel-1 {
+        top: 12vh;
+        right: 20vw;
+    }
+
+    .panel-2 {
+        display: none;
+    }
+
+    .panel-3 {
+        bottom: 4vh;
+    }
+
+    .panel-4 {
+        top: 70vh;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .panel-1 {
+        top: 12vh;
+        right: 5vw;
+
+        width: 270px;
+        height: 130px;
+    }
+
+    .panel-3 {
+        bottom: 8vh;
+        right: 6vw;
+
+        width: 150px;
+        height: 200px;
+    }
+
+    .panel-4 {
+        top: 60vh;
+    }
 }
 
 /* Parallax Image Background */
@@ -157,6 +223,8 @@ body {
 
 .our-mission {
     margin-top: 50vh;
+    justify-content: center;
+    width: 100vw;
 }
 
 .exchange-anim {
@@ -164,16 +232,41 @@ body {
     margin-top: 2rem;
 }
 
+@media screen and (max-width: 550px) {
+    
+    .our-mission-title {
+        font-size: 1.5rem;
+        padding: 0 20px;
+    }
+
+    .exchange-anim {
+        display: none;
+    }
+
+    .our-mission-description {
+        margin: 0 1rem;
+    }
+}
+
+
+
 /* Contact Section */
 
 .contact {
     margin-top: 10vh;
+    margin-bottom: 2rem;
 }
 
 /* Sign Up Section */
 
 .signup {
     margin-top: 10vh;
+}
+
+@media screen and (max-width: 550px) {
+    .signup-title {
+        display: none;
+    }
 }
 
 .signup-label {
@@ -221,4 +314,10 @@ button:hover {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1240px) {
+    .footer {
+        display: none;
+    }
 }

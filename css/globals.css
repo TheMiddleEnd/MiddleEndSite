@@ -32,10 +32,36 @@ nav {
     gap: 3rem;
 
     align-items: center;
+
+    margin-top: 10px;
 }
 
 .nav-logo {
     height: 80px;
+}
+
+.nav-logo-text {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    .nav-item {
+        display: none;
+    }
+
+    .nav-logo {
+        display: block;
+        height: 50px;
+    }
+
+    nav {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .nav-logo-text {
+        display: block;
+    }
 }
 
 .nav-item {
