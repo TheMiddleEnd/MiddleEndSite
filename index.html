@@ -84,13 +84,27 @@
             Whether you're a <strong>developer</strong> raring to go or a <strong>client</strong> ready to find a solution, sign up here!
         </h2>
 
-        <p class="signup-label">Name:</p><input type="text" id="name-input"></input>
-        <p class="signup-label">Phone Number:</p><input type="text" id="phone-input"></input>
-        <p class="signup-label">Email Address:</p><input type="text" id="email-input"></input>
+        <form id="signup-form" class="signup-form">
+            <input required placeholder="Name" type="text" id="name-input" class="signup-input"></input>
+            <input required placeholder="Phone Number" type="number" id="phone-input" class="signup-input"></input>
+            <input required placeholder="Email Address" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email-input" class="signup-input"></input>
+            <div>
+                <p class="i-am-a">I am a:</p>
+                <div class="radio-inputs">
+                    <label class="radio">
+                        <input radioName="client" type="radio" name="signupRadio" checked="">
+                        <span class="name">Client</span>
+                    </label>
+                    <label class="radio">
+                        <input radioName="developer" type="radio" name="signupRadio">
+                        <span class="name">Developer</span>
+                    </label>
+                </div>
+            </div>
 
-        <button id="signup-button">
-            SIGN UP ➡
-        </button>
+            <input id="signup-button" class="signup-button" type="submit" value="SIGN UP ➡"></input>
+            <p class="success-msg">Thanks for signing up! We'll contact you soon by email!</p>
+        </form>
 
     </div>
 
@@ -123,6 +137,5 @@
 
     </div>
 
-    <!-- <img src="./media/images/parallax2.png" alt="" class="parallax-bg"> -->
 </body>
 </html>

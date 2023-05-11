@@ -2,7 +2,7 @@
 // https://firebase.google.com/docs/web/learn-more#available-libraries
 // or, just import from https://www.gstatic.com/firebasejs/9.18.0/firebase-THINGTHATWENEED.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
-import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js";
+import { getDatabase, ref, set, push } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyC6l2N4zKu0yjrfdwLqtoW240xyQwj57Iw",
@@ -20,26 +20,26 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-$("#signup-button").click(() => {
+$("#signup-form").submit(function (e) {
+  e.preventDefault();
 
   const name = $("#name-input").val();
   const phone = $("#phone-input").val();
   const email = $("#email-input").val();
-
-  if ([name,phone,email].some((e) => !e)) { // at least one is empty
-    alert("YOU'RE BAD"); // TODO: HANDLE ON ERROR, SHOW ERROR MESSAGE
-    return;
-  }
-
-  // console.log(name, phone, email);
-
-  set(ref(db, email), {
+  const type = $('input[name="signupRadio"]:checked').attr("radioName");
+    
+  push(ref(db), {
+    email: email,
     name: name,
-    phone: phone
+    phone: phone,
+    type: type
   });
 
-  alert("YOU'RE GOOD");
+  
+  $("#signup-button").fadeOut(400, () => {
+    $(".success-msg").fadeIn();
+  });
+  
 
-  // TODO: HANDLE ON SUCCESS, SHOW SUCCESS MESSAGE
-
+  
 });
