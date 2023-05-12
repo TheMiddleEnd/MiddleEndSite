@@ -1,6 +1,20 @@
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 body {
 	position: relative;
 	height: 100vh;
+	margin: 0px;
+}
+
+.bg-img {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 	/* overflow: hidden; */
 
 	background-image: url("../media/images/parallax.png");
@@ -10,28 +24,51 @@ body {
 	margin: 0px;
 }
 
-@media screen and (max-width: 900px) {
-	body {
+@media screen and (max-width: 800px) {
+	.bg-img {
 		background-image: none;
 	}
 }
 
-/* Hide Scrollbar */
+/* Scrollbar */
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
 	display: none;
 }
 
 body {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+	height: 10px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* border-radius: 5px; */
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* Title Section */
 
 .title-div {
-	margin-left: 10%;
 	margin-top: 30vh;
+	width: 80vw;
+	margin-left: 10vw;
 }
 
 .main-title {
@@ -39,15 +76,13 @@ body {
 	font-size: 2.5rem;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
 	.main-title {
 		font-size: 1.5rem;
 	}
 
 	.title-div {
 		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
 	}
 }
 
@@ -75,6 +110,15 @@ body {
 
 /* Panels */
 
+.panel-root {
+	position: absolute;
+	height: max(100vh, 600px);
+	width: 100vw;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
 .panel {
 	position: absolute;
 
@@ -91,21 +135,21 @@ body {
 	border: 6px solid red;
 	background-image: url("../media/images/panels/panel-1.png");
 
-	height: 180px;
-	width: 380px;
+	height: 15vh;
+	width: 30vw;
 
-	top: 8vh;
-	right: 3vw;
+	top: 15vh;
+	right: 10vw;
 }
 
 .panel-2 {
 	border: 6px solid rgb(255, 255, 0);
 	background-image: url("../media/images/panels/panel-2.png");
 
-	width: 280px;
-	height: 180px;
+	width: 20vw;
+	height: 17vw;
 
-	bottom: 8vh;
+	bottom: 0vh;
 	left: 15vw;
 }
 
@@ -114,8 +158,8 @@ body {
 	background-image: url("../media/images/panels/panel-3.png");
 	background-size: 150%;
 
-	width: 230px;
-	height: 250px;
+	width: 20vw;
+	height: 35vh;
 
 	bottom: 5vh;
 	right: 15vw;
@@ -138,7 +182,14 @@ body {
 	left: 10vw;
 }
 
-@media screen and (max-width: 850px) {
+/*  and (min-width: 800px) */
+@media screen and (max-height: 550px) {
+	.panel-1, .panel-2, .panel-3, .panel-4 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
 	.panel-1 {
 		top: 12vh;
 		right: 20vw;
@@ -150,32 +201,13 @@ body {
 
 	.panel-3 {
 		bottom: 4vh;
+		right: 10vw;
+		width: 20vw;
+		height: 20vh;
 	}
 
 	.panel-4 {
 		top: 70vh;
-	}
-}
-
-@media screen and (max-width: 720px) {
-	.panel-1 {
-		top: 12vh;
-		right: 5vw;
-
-		width: 270px;
-		height: 130px;
-	}
-
-	.panel-3 {
-		bottom: 8vh;
-		right: 6vw;
-
-		width: 150px;
-		height: 200px;
-	}
-
-	.panel-4 {
-		top: 60vh;
 	}
 }
 
@@ -201,6 +233,9 @@ body {
 
 	justify-content: center;
 	align-items: center;
+	
+	width: 80vw;
+	padding-left: 10vw;
 }
 
 .section-title {
@@ -223,7 +258,6 @@ body {
 .our-mission {
 	margin-top: 50vh;
 	justify-content: center;
-	width: 100vw;
 }
 
 .exchange-anim {
@@ -231,7 +265,7 @@ body {
 	margin-top: 2rem;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 800px) {
 	.our-mission-title {
 		font-size: 1.5rem;
 		padding: 0 20px;
@@ -244,13 +278,6 @@ body {
 	.our-mission-description {
 		margin: 0 1rem;
 	}
-}
-
-/* Contact Section */
-
-.contact {
-	margin-top: 10vh;
-	margin-bottom: 2rem;
 }
 
 /* Sign Up Section */
@@ -272,7 +299,8 @@ body {
 	border: none;
 	border-bottom: 2px solid rgba(118, 118, 118, 0.1);
 
-	width: 20vw;
+	width: 70vw;
+	font-size: 1.2rem;
 	text-align: center;
 
 	outline-width: 0;
@@ -356,28 +384,25 @@ body {
 /* Footer */
 
 .footer {
-	width: 100vw;
-
+	width: auto;
 	padding: 20px;
+
 	margin-top: 10vh;
+	margin-left: 0;
 
 	background-color: rgb(56, 56, 56);
 }
 
-.footer-title {
-	font-size: 4rem;
+.footer-text {
+	font-size: max(3vw, 1rem);
 	color: white;
 	font-family: "Inria Serif", serif;
+	text-align: center;
+	overflow-wrap: anywhere;
 }
 
 .return-to-top {
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
-}
-
-@media screen and (max-width: 1240px) {
-	.footer {
-		display: none;
-	}
 }
