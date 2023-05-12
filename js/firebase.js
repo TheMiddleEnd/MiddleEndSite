@@ -24,14 +24,14 @@ $("#signup-form").submit(function (e) {
   e.preventDefault();
 
   const name = $("#name-input").val();
-  const phone = $("#phone-input").val();
+  // const phone = $("#phone-input").val();
   const email = $("#email-input").val();
   const type = $('input[name="signupRadio"]:checked').attr("radioName");
     
   push(ref(db), {
     email: email,
     name: name,
-    phone: phone,
+    // phone: phone,
     type: type
   });
 
