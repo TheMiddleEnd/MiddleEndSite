@@ -39,6 +39,11 @@ nav {
 
 .nav-logo {
     height: 80px;
+    padding-left: 0.8rem;
+}
+
+.nav-logo:hover {
+    cursor: pointer;
 }
 
 .nav-logo-text {
