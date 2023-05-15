@@ -29,6 +29,7 @@ $("#signup-form").submit(function (e) {
   const type = $('input[name="signupRadio"]:checked').attr("radioName");
     
   push(ref(db), {
+    timestamp: Date().toString(),
     email: email,
     name: name,
     // phone: phone,
