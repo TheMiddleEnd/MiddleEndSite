@@ -369,6 +369,8 @@ body {
 	padding: 10px 60px;
 	border-radius: 5px;
 	color: white;
+
+	margin-bottom: 2rem;
 }
 
 .signup-button:hover {
@@ -379,8 +381,8 @@ body {
 }
 
 .initially-hidden {
-	display: none;
 	font-size: 1.5rem;
+	display: none;
 }
 
 .success-msg {
