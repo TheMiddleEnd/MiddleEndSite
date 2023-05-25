@@ -378,8 +378,27 @@ body {
 	cursor: pointer;
 }
 
-.success-msg {
+.initially-hidden {
 	display: none;
+	font-size: 1.5rem;
+}
+
+.success-msg {
+	margin: 0;
+}
+
+.form-link {
+	text-decoration: none;
+	color: white;
+	background-color: lightskyblue;
+	padding: 10px 20px;
+	border-radius: 12px;
+	border: 1px solid lightskyblue;
+}
+
+.form-link:hover {
+	color: lightskyblue;
+	background-color: white;
 }
 
 /* Footer */

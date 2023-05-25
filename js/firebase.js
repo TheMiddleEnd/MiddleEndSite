@@ -38,6 +38,7 @@ $("#signup-form").submit(function (e) {
   
   $("#signup-button").fadeOut(400, () => {
     $(".success-msg").fadeIn();
+    type == "client" ? $(".client-form-link").fadeIn() : $(".developer-form-link").fadeIn();
   });
   
 
